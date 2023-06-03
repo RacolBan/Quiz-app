@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-blue-600
+  }
+}
+.btn{
+  @apply  rounded-lg disabled:bg-slate-400/20 disabled:text-white
+}
+.btn:hover{
+  @apply transition duration-300 opacity-90 disabled:opacity-100 
+}
+.answer{
+  @apply border border-gray-500  border-solid px-3 py-2 flex justify-start items-start w-full rounded-lg mt-3 
+}
+.results {
+  @apply  w-72 h-72 bg-white rounded-2xl flex flex-col justify-center items-center
+}
+.white_btn {
+  @apply text-lg border border-blue-500 bg-gray-100 btn hover:font-semibold text-center font-inter block text-black w-24 px-4 py-2 ;
+}
+.blue_btn {
+  @apply text-lg border border-black bg-blue-600 btn text-center font-inter flex justify-center w-20 text-white px-4 py-1.5  ;
+}
+.correct {
+  @apply border border-green-300 bg-green-400/50 
+}
+.incorrect {
+  @apply border border-red-300 bg-red-400/50 
+}
+.disabled-answer {
+  @apply pointer-events-none;
+}
+.prompt {
+  @apply w-[75vw] h-[65vh] lg:w-[50vw]  bg-white rounded-2xl 
+}
+.flex-center {
+  @apply flex justify-center items-center;
+}
+
+.flex-start {
+  @apply flex justify-start items-start;
+}
+
+.flex-end {
+  @apply flex justify-end items-center;
+}
+
+.flex-between {
+  @apply flex justify-between items-center;
+}
