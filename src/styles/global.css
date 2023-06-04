@@ -24,7 +24,7 @@
   @apply text-lg border border-blue-500 bg-gray-100 btn hover:font-semibold text-center font-inter block text-black w-24 px-4 py-2 ;
 }
 .blue_btn {
-  @apply text-lg border border-black bg-blue-600 btn text-center font-inter flex justify-center w-20 text-white px-4 py-1.5  ;
+  @apply text-lg border disabled:border-none disabled:text-gray-300 border-black bg-blue-600 btn text-center font-inter flex justify-center w-20 text-white px-4 py-1.5  ;
 }
 .correct {
   @apply border border-green-300 bg-green-400/50 

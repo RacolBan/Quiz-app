@@ -27,9 +27,9 @@ function App() {
         {state.showResults && !state.showReview &&(
           <div className="results">
             <div className="font-bold text-xl">Congratulations!</div>
-            <div className="results-info">
+            <div className="flex flex-col justify-center items-center">
               <div>You have completed the quiz.</div>
-              <div>
+              <div className='text-center'>
                 You've got <span className='text-blue-600 font-semibold'>{state.correctAnswersCount}</span>  of &nbsp;
                 <span className='text-blue-600 font-semibold'>{state.questions.length}</span> in {minute ? `${minute} minute ${updSecond} seconds` : `${updSecond} seconds` }
               </div>

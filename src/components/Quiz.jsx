@@ -36,7 +36,6 @@ export default function Quiz() {
         { index === lengthQuestion - 1 
         ? <Button text='Submit' handleSubmit={handleSubmit} />
         : <Button text='Next' handleNext={handleNext} />
-
         }
        
       </div>
