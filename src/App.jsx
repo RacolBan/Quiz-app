@@ -10,7 +10,7 @@ function App() {
   };
   useEffect(() => {
     const quizArr = async () => {
-      const response = await fetch("https://opentdb.com/api.php?amount=5");
+      const response = await fetch(import.meta.env.VITE_URL);
       const data = await response.json();
       dispatch({ type: 'FETCH', payload: data.results })
       dispatch({ type: 'ANSWERS' })
